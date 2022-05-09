@@ -44,7 +44,7 @@ python3 sholister_org.py scope_organizations.txt
 
 ### Differences between ShoLister and Shodan CLI 
 1. ShoLister based on Shodan Library so they're using the same gateway to get the results. 
-2. You can increase the search limit, but at shodan cli you have maximum 1000.
+2. Filter the results to avoid ISP false positive domains.
 3. You can pass a file with multiple hosts or organizations names to make it more easier to get the results. 
 4. ShoLister provide the results as a separate file for each hostname or organization.
 
