@@ -4,16 +4,17 @@ from termcolor import colored
 import sys
 
 header1 = r'''
-  _   _   _   _   _   _   _   _   _  
- / \ / \ / \ / \ / \ / \ / \ / \ / \ 
-( s | h | o | l | i | s | t | e | r )
- \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/ v0.1
-
+                   _   _   _   _   _   _   _   _   _  
+                  / \ / \ / \ / \ / \ / \ / \ / \ / \ 
+                 ( s | h | o | l | i | s | t | e | r )
+                  \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/ v0.1
+'''
+header2 = r'''
 Hostname search using [Org] Filter.
 Coded By: Eslam Akl (@eslam3kll)
 '''
-print(colored(header1, 'white', attrs=['bold']))
-
+print(colored(header1, 'red', attrs=['bold']))
+print(colored(header2, 'white', attrs=['bold']))
 main_domains_file = sys.argv[1]
 api = Shodan(get_api_key())
 limit = 1000
